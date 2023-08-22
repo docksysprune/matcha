@@ -1,29 +1,250 @@
+@import url("https://fonts.googleapis.com/css?family=Alegreya:900|Open+Sans|Slabo+27px&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 body {
-    background-color: #fffbf7;
+  background-color: #fffbf7;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  font-family: "Open Sans", sans-serif;
+}
+
+main {
+  margin-top: 285px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 h1 {
-    /* color: #46484c; */
-    color: #025157;
-    /* text-align: center; */
+  color: #025157;
+  font-family: "Alegreya", serif;
+  font-size: 60px;
+  margin-bottom: 24px;
 }
 
-p {
-    color: #161414e0;
-    font-family: verdana;
-    font-size: 20px;
-    margin: 0;
-    padding: 0;
-    
+h4 {
+  color: #46484c;
+  font-family: "Slabo 27px", serif;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+form {
+  height: 55px;
+}
+
+input {
+  border: 1px solid #b6b6b6;
+  padding: 6px 20px;
+  width: 60%;
+  max-width: 250px;
+  height: 100%;
+}
+
+form button {
+  background-color: #025157;
+  color: #fff;
+  border: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 6px 20px;
+  margin-left: -10px;
+}
+
+form input,
+button {
+  height: 100%;
+  border-radius: 8px;
+  overflow: visible;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
 }
 
 button {
-    color: #fff;
-    background-color: #025157;
+  color: #fff;
+  background-color: #025157;
 }
 
-img {
-    height: auto; 
-    max-width: 20%;
-    border-bottom: 1px solid black;
+main p {
+  margin-top: 16px;
 }
+
+p {
+  color: #8b8b8bcc;
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  margin: 0px 0px 16px;
+}
+
+figure {
+  margin-top: 32px;
+  margin-bottom: 1rem;
+}
+
+li {
+  display: inline;
+}
+
+.actions * {
+  text-align: right;
+  font-family: "Open Sans", sans-serif;
+}
+
+.header {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  color: rgb(21, 19, 19);
+  background-color: #fffbf7;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.header a {
+  text-decoration: none;
+  color: rgb(21, 19, 19);
+}
+
+.navbar ul > li > a {
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 8px;
+  color: #025157;
+}
+
+.navbar ul > li > a:hover {
+  color: rgb(21, 19, 19);
+}
+
+.navbar ul > li:first-child a {
+  color: rgb(21, 19, 19);
+}
+
+.menu-item {
+  display: inline;
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+.actions > a {
+  text-decoration: none;
+  margin-right: 10px;
+  color: #67b54b;
+}
+
+.actions button {
+  color: white;
+  background-color: #67b54b;
+  padding: 20px 14px;
+  border: 0;
+  border-radius: 5px;
+  font-size: 1.4rem;
+}
+
+.promo {
+  display: flex;
+  max-width: 70%;
+  margin: 100px auto;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.explanatory-video {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.explanatory-video img {
+  margin-top: 10px;
+  height: 100%;
+}
+
+.publish {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 50%;
+}
+
+.publish p {
+  text-align: left;
+}
+
+h3 {
+  color: #025157;
+  font-family: "Alegreya", serif;
+  font-size: 4.0rem;
+  line-height: 48px;
+  margin: 0px 0px 16px;
+}
+
+.features {
+  background-color: #025157;
+  padding: 5% 10%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 330px 330px;
+}
+
+.feature-card {
+  background-color: white;
+  display: flex;
+  margin: 0px 15px 30px;
+  border-radius: 5px;
+  overflow: hidden;
+  
+}
+
+.feature-card *{
+  font-family: "Open Sans", sans-serif;
+  color: rgb(21, 19, 19);
+  text-align: left;
+
+}
+
+.feature-card h3 {
+  font-size: 2.4rem;
+}
+
+.feature-content a {
+  color: #67b54b;
+}
+
+.feature-content {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px 40px 40px;
+  width: 75%;
+}
+
+.feature-image {
+
+}
+
+
+/*Revisa el navbar y las clases de la img y el header, esta chocando lo que hizo el profe 
+con lo que tenias tu, lo demas esta relativamente bien*/
