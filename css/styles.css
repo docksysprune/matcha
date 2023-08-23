@@ -26,6 +26,10 @@ main {
   flex-direction: column;
 }
 
+i {
+  display: none;
+}
+
 h1 {
   color: #025157;
   font-family: "Alegreya", serif;
@@ -170,6 +174,11 @@ li {
   justify-content: space-evenly;
 }
 
+figure img {
+  width: 30vw;
+  height: 20vh;
+}
+
 .explanatory-video {
   flex: 1;
   display: flex;
@@ -242,9 +251,57 @@ h3 {
   width: 75%;
 }
 
-.feature-image {
+.icon {
+  display: none;
+}
+
+@media (max-width: 575px) {
+  .navbar, 
+  .actions {
+    display: none;
+  }
+
+  h1 {
+    font-size: 45px;
+  }
+
+  main {
+    margin: 200px auto 0px auto;
+    width: 450;
+    text-align: center;
+  }
+
+  main > img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .icon {
+    display: block;
+  }
+
+  figure img {
+    width: 60vw;
+    height: 25vh;
+  }
+
+  .promo {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+  }
+
+  .promo article {
+    width: auto;
+  }
+
+  .promo{
+    
+  }
+
 
 }
+
 
 
 /*Revisa el navbar y las clases de la img y el header, esta chocando lo que hizo el profe 
