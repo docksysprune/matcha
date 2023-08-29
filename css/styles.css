@@ -19,15 +19,15 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+i {
+  display: none;
+}
+
 main {
   margin-top: 285px;
   display: flex;
   align-items: center;
   flex-direction: column;
-}
-
-i {
-  display: none;
 }
 
 h1 {
@@ -299,6 +299,29 @@ h3 {
     
   }
 
+
+}
+
+@media (max-width: 575px) {
+  
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  
+}
+
+/** dispositivos medianos (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/** dispositivos grandes (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  
+}
+
+/** dispositivos extra grandes (monitores grandes, tvs) */
+@media (min-width: 1200px) {
 
 }
 
