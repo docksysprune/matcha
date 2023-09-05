@@ -1,0 +1,26 @@
+{
+  "name": "matcha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass scss/main.scss styles/main.css",
+    "watch": "sass --watch scss/main.scss styles/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/docksysprune/matcha.git"
+  },
+  "author": "Isela Ceballos Miranda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/docksysprune/matcha/issues"
+  },
+  "homepage": "https://github.com/docksysprune/matcha#readme",
+  "devDependencies": {
+    "sass": "^1.66.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.1"
+  }
+}
